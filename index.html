@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Віртуальні Свічки - Онлайн Молитва</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gif"></div>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="icon-left">
+                    <!-- Первая ікона-->
+                    <img src="ikona.jpg" alt="Ікона" class="church-icon">
+                </div>
+                <div class="header-text">
+                    <h1>Віртуальні Свічки</h1>
+                    <p>Запаліть свічку перед образом онлайн для молитви та звершень</p>
+                </div>
+                <div class="icon-right">
+                    <!-- Хрест 1-->
+                    <img src="hrest2.gif" alt="Хрест" class="church-icon">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="icon-banner">
+                <!-- Святой образ-->
+                <img src="svytoiobraz.jpg" alt="Святий образ" class="holy-icon-gif">
+            </div>
+
+            <div class="candle-selection">
+                <h2><span class="icon">🕯️</span> Оберіть свічку:</h2>
+                <div class="candle-types" id="candleTypes">
+                </div>
+            </div>
+
+            <div class="prayer-section">
+                <div class="prayer-form">
+                    <h3><span class="icon">🙏</span> Ваша молитва</h3>
+                    <div class="form-group">
+                        <label for="userName">Ваше ім'я (необов'язково):</label>
+                        <input type="text" id="userName" placeholder="Введіть ваше ім'я...">
+                    </div>
+                    <div class="form-group">
+                        <label for="candleMessage">Ваша молитва чи прохання:</label>
+                        <textarea id="candleMessage" placeholder="Напишіть вашу молитву чи прохання до Господа..." rows="4"></textarea>
+                    </div>
+                    <button id="addCandleBtn" class="btn btn-prayer">
+                        <span class="btn-icon">🕯️</span>
+                        Запалити свічку
+                    </button>
+                </div>
+            </div>
+
+            <div class="candles-section">
+                <h3><span class="icon">⭐</span> Запалені свічки</h3>
+                <div class="candles-container" id="candlesContainer">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="resetBtn" class="btn btn-secondary">
+                    <span class="btn-icon">🗑️</span>
+                    Очистити всі
+                </button>
+            </div>
+
+            <div class="counter">
+                <div class="counter-icon">🕯️</div>
+                <p>Всього запалено свічок: <span id="candleCount">0</span></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-icons">
+                    <!-- Три маленьких-->
+                    <img src="hrest3.wbp.webp" alt="Хрест" class="small-icon">
+                    <img src="candle.gif" alt="Свічка" class="small-icon">
+                    <img src="swear.gif" alt="Молитва" class="small-icon">
+                </div>
+                <p>© 2025 Віртуальні Свічки. Всі права захищені.</p>
+                <p class="prayer-text">Господи, прийми цю свічку як знак нашої віри та любові до Тебе</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
