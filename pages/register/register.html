@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - SpeedType</title>
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <header>
+        <div class="container">
+            <h1 class="site-title">SpeedType</h1>
+            <p class="site-subtitle">Покращуй свої навички друку!</p>
+        </div>
+    </header>
+
+    <!-- Навігаційне меню -->
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="../../index.html" class="nav-link">Головна</a></li>
+            <li><a href="../leaderboard/leaderboard.html" class="nav-link">Таблиця лідерів</a></li>
+            <li><a href="../about/about.html" class="nav-link">Про нас</a></li>
+            <li><a href="../contacts/contacts.html" class="nav-link">Контакти</a></li>
+            <li><a href="register.html" class="nav-link active">Реєстрація</a></li>
+            <li><a href="../profile/profile.html" class="nav-link">Особистий кабінет</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Головний контент -->
+    <main class="main-content">
+        <div class="container">
+            <section class="register-section">
+                <div class="register-container">
+                    <h2>Реєстрація</h2>
+                    <p class="register-subtitle">Створіть обліковий запис та почніть покращувати свої навички друку</p>
+                    
+                    <form class="register-form">
+                        <div class="form-group">
+                            <label for="username">Нікнейм *</label>
+                            <input type="text" id="username" name="username" required placeholder="Оберіть унікальний нікнейм">
+                            <small class="hint">Від 3 до 20 символів (лише літери, цифри та _)</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Пароль *</label>
+                            <input type="password" id="password" name="password" required placeholder="Мінімум 6 символів">
+                            <small class="hint">Мінімум 6 символів</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password">Підтвердження пароля *</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Повторіть пароль">
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">Я погоджуюсь з <a href="#">умовами використання</a> та <a href="#">політикою конфіденційності</a></label>
+                        </div>
+                        
+                        <button type="submit" class="register-btn">Зареєструватися</button>
+                        
+                        <div class="login-link">
+                            <p>Вже маєте акаунт? <a href="#">Увійти</a></p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SpeedType</h3>
+                    <p>Покращуй свої навички швидкого друку разом з нами. Стань найкращим!</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                        <a href="#" class="social-link">💬 Discord</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Навігація</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="leaderboard.html">Таблиця лідерів</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="register.html">Реєстрація</a></li>
+                        <li><a href="profile.html">Особистий кабінет</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Можливості</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Навчання</a></li>
+                        <li><a href="#">Тренування</a></li>
+                        <li><a href="#">Тестування</a></li>
+                        <li><a href="#">Гра з іншими</a></li>
+                        <li><a href="#">Статистика</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <div class="contact-info">
+                        <p>📧 support@speedtype.com</p>
+                        <p>📞 +380 (44) 123-45-67</p>
+                        <p>📍 м. Київ, вул. Хрещатик, 25</p>
+                        <p>🕒 Пн-Пт: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SpeedType. Усі права захищені.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
